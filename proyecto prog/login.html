@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>Registrate</title>
+    
+</head>
+<body>
+    <section class="form-login" id="form-login">
+        <h5>INICIAR SESIÓN</h5>
+        <input class="registro" type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+        <input class="registro" type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+        <button class="boton" id="iniciarSesion" onclick="redireccionar()">Iniciar Sesión</button>
+        <button class="boton" id="mostrarRegistro" onclick="mostrarRegistro()">Registrarse</button>
+    </section>
+
+    <section class="form-login" id="formRegistro" style="display: none;">
+        <input class="registro" type="text" id="nombreRegistro" name="nombreRegistro" placeholder="nombre" required>
+        <input class="registro" type="text" id="usuarioRegistro" name="usuarioRegistro" placeholder="Usuario" required>
+        <input class="registro" type="text" id="contraseñaRegistro" name="contraseñaRegistro" placeholder="Contraseña" required>
+        <input class="registro" type="text" id="confirmarContraseña" name="confirmarContraseña" placeholder="confirmar contraseña" required>
+        <button class="boton" id="registrarse" onclick="registrarse()">Registrarse</button>
+        <button class="boton" id="atras" onclick="atras()">Atras</button>
+    </section>
+</body>
+</html>
